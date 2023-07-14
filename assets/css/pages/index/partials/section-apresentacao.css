@@ -9,6 +9,7 @@ section.apresentacao {
   position: relative;
   overflow: hidden;
 }
+
 /* <div class="faixa"> */
 section.apresentacao .faixa {
   width: 2000px;
@@ -19,15 +20,18 @@ section.apresentacao .faixa {
   z-index: 1;
   animation: rodandofaixa 10s linear infinite;
 }
+
 /* Animação que faz a faixa girar */
 @keyframes rodandofaixa {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /* <div class="conteudo"> */
 section.apresentacao .conteudo {
   display: flex;
@@ -44,6 +48,7 @@ section.apresentacao .conteudo {
   overflow: hidden;
   z-index: 2;
 }
+
 /* <div class="blush"> */
 section.apresentacao .conteudo .blush {
   width: 1000px;
@@ -57,18 +62,22 @@ section.apresentacao .conteudo .blush {
   z-index: 3;
   animation: piscandoblush 2s linear infinite;
 }
+
 /* Animação que faz a linha girar */
 @keyframes piscandoblush {
   0% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 0.1;
   }
+
   100% {
     opacity: 0.3;
   }
 }
+
 /* <div class="foto"> */
 section.apresentacao .conteudo .foto {
   display: flex;
@@ -77,6 +86,7 @@ section.apresentacao .conteudo .foto {
   position: relative;
   z-index: 4;
 }
+
 /* <div class="linha"> */
 section.apresentacao .conteudo .foto .linha {
   width: 220px;
@@ -88,21 +98,25 @@ section.apresentacao .conteudo .foto .linha {
   border-radius: 50%;
   animation: rodandolinha 10s linear infinite;
 }
+
 /* Animação que faz a linha girar */
 @keyframes rodandolinha {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /* imagem da <div class="foto"> */
 section.apresentacao .conteudo .foto img {
   width: 100%;
   max-width: 200px;
   border-radius: 50%;
 }
+
 /* <div class="informacao"> */
 section.apresentacao .conteudo .informacao {
   display: flex;
@@ -114,11 +128,13 @@ section.apresentacao .conteudo .informacao {
   z-index: 4;
   margin: 30px 0 10px 0;
 }
+
 section.apresentacao .conteudo .informacao h2 {
   font-family: var(--bold);
   font-size: 1.2rem;
   color: var(--cor-principal);
 }
+
 section.apresentacao .conteudo .informacao p {
   font-family: var(--regular);
   font-size: 0.9rem;
@@ -126,6 +142,7 @@ section.apresentacao .conteudo .informacao p {
   line-height: 1.5;
   margin: 5px 0 0 0;
 }
+
 /* <div class="links"> */
 section.apresentacao .conteudo .links {
   display: flex;
@@ -136,6 +153,7 @@ section.apresentacao .conteudo .links {
   max-width: 400px;
   z-index: 4;
 }
+
 /* Link da <div class="links"> */
 section.apresentacao .conteudo .links a {
   display: flex;
@@ -146,34 +164,41 @@ section.apresentacao .conteudo .links a {
   margin: 10px 0 0 0;
   transition: all 0.3s;
 }
+
 section.apresentacao .conteudo .links a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 section.apresentacao .conteudo .links a:hover .icone img {
   transform: scale(1.2);
 }
+
 section.apresentacao .conteudo .links a .icone {
   padding: 15px;
   height: 100%;
   background-color: var(--cor-principal);
   border-radius: 10px 0 0 10px;
 }
+
 section.apresentacao .conteudo .links a .icone img {
   width: 100%;
   max-width: 35px;
   transition: all 0.3s;
 }
+
 section.apresentacao .conteudo .links a .texto {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
 }
+
 section.apresentacao .conteudo .links a .texto h3 {
   font-family: var(--bold);
   font-size: 1rem;
   color: var(--cor-preto);
 }
+
 section.apresentacao .conteudo .links a .texto p {
   font-family: var(--regular);
   font-size: 0.8rem;
@@ -181,6 +206,7 @@ section.apresentacao .conteudo .links a .texto p {
   opacity: 0.5;
   margin: 5px 0 0 0;
 }
+
 /* Link destacado da <div class="links"> */
 section.apresentacao .conteudo .links a.destaque {
   padding: 0;
@@ -188,15 +214,18 @@ section.apresentacao .conteudo .links a.destaque {
   align-items: center;
   text-align: center;
 }
+
 section.apresentacao .conteudo .links a.destaque .texto {
   padding: 20px;
   align-items: center;
   text-align: center;
 }
+
 section.apresentacao .conteudo .links a.destaque:hover h4 {
   background-color: var(--cor-branco);
   color: var(--cor-principal);
 }
+
 section.apresentacao .conteudo .links a.destaque h4 {
   font-family: var(--bold);
   font-size: 0.8rem;
@@ -208,34 +237,100 @@ section.apresentacao .conteudo .links a.destaque h4 {
   border-radius: 10px 10px 0 0;
   transition: all 0.3s;
 }
+
 /* Responsivo */
 @media screen and (max-width: 1000px) {
+
   /* <section class="apresentacao"> */
   section.apresentacao {
     padding: 10px;
   }
+
   /* <div class="faixa"> */
   section.apresentacao .faixa {
     height: 200px;
   }
+
   /* <div class="conteudo"> */
   section.apresentacao .conteudo {
     padding: 50px 20px;
   }
+
   /* <div class="linha"> */
   section.apresentacao .conteudo .foto .linha {
     width: 170px;
     height: 170px;
   }
+
   /* imagem da <div class="foto"> */
   section.apresentacao .conteudo .foto img {
     max-width: 150px;
   }
+
   /* Link da <div class="links"> */
   section.apresentacao .conteudo .links a .icone img {
     max-width: 30px;
   }
+
   section.apresentacao .conteudo .links a .texto {
     padding: 15px;
   }
+}
+
+.card {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tituloCard {
+  background-color: var(--cor-principal);
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-family: var(--bold);
+  font-size: 0.8rem;
+  color: var(--cor-branco);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.conteinerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #d6d6dbd8;
+  height: 120px;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  font-family: var(--regular);
+}
+
+.conteinerCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 8px;
+  color: white;
+}
+
+#btn {
+  background-color: var(--cor-principal);
+  color: white;
+  transition: 0.2s;
+}
+
+#btn:hover {
+    background-color: #9e0123;
+}
+
+#info {
+  margin-top: 80px;
+}
+
+#info h2 {
+  font-size: 1.5rem;
 }
