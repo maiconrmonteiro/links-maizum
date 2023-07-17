@@ -280,10 +280,11 @@ section.apresentacao .conteudo .links a.destaque h4 {
 .card {
   width: 100%;
   margin-top: 40px;
-}
+  box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);
+  border-radius: 10px;
 
 .tituloCard {
-  background-color: var(--cor-principal);
+  background-color: #ff0037de;
   width: 100%;
   padding: 10px;
   color: white;
@@ -318,7 +319,7 @@ section.apresentacao .conteudo .links a.destaque h4 {
 }
 
 #btn {
-  background-color: var(--cor-principal);
+  background-color: #ff0037de;
   color: white;
   transition: 0.2s;
 }
